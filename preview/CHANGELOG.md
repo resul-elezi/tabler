@@ -1,0 +1,111 @@
+# @tabler/preview
+
+## 2.0.0
+
+### Minor Changes
+
+- 5e119d4: Added Pay page with dedicated layout, navigation link, and card/PayPal payment form.
+- d8956a0: Updated the `preview` and `docs` packages to build with Astro instead of Eleventy, keeping the generated pages identical and moving shared components to `shared/astro/`.
+- 100a37b: Added background pattern utilities and documentation, including updated preview demos.
+- ec94693: Added new `card-gradients` page showcasing various gradient card styles and components.
+- b0fa655: Added Change Password modal with current password, new password with strength indicator, confirm password validation, and show/hide password toggles.
+- ad22d04: Added a color palette to the signature pad component for selecting the pen color.
+- b0fa655: Added Confirm Delete modal with warning icon, confirmation checkbox, and JavaScript validation to enable delete button only when confirmed.
+- 62178f8: Added new `dashboard-crm` page with reusable CRM cards.
+- 4ce08ca: Added new Crypto Dashboard page with cryptocurrency portfolio overview, market data, and order history.
+- b0fa655: Added Edit Profile modal with avatar upload, personal information fields, social links, and date of birth.
+- 8d8727f: Added language selector dropdown to navbar with flag indicators for multilingual support.
+- 4ce08ca: Refactored page-menu structure for dashboards and updated navigation menu organization.
+- 4ce08ca: Refactored the navbar-side component and reorganized its apps, language, notifications, theme and user sections for better maintainability.
+- b0fa655: Added New Task modal with fields for task name, description, assigned user, priority, due date, and category tags.
+- 9c5d729: Added new onboarding page with progress indicator and navigation layout.
+- 9c5d729: Added Progress Background component with text labels and value display.
+- 9c5d729: Added Progress Steps component for step-by-step navigation indicators.
+- 99b9ea4: Added new Task List page with tables showing tasks organized by status (Upcoming, In Progress, Completed) and modal dialog for adding new tasks.
+- 7556ae2: Added `auto` color mode to theme settings with system `prefers-color-scheme` support and an inverted primary color scheme option.
+- e3d86c5: Upgraded `apexcharts` from `3.54.1` to `5.3.6` and added CSS variables (`--chart-{id}-color-{index}`) for dynamic chart colors to fix compatibility with the new version.
+
+### Patch Changes
+
+- 0fd35c3: Updated the `active-users-2` card chart to use `chart-id="active-users-2"` with `height="11"` for a more compact layout.
+- 4ce08ca: Added crypto markets and orders data files (`crypto-markets.json`, `crypto-orders.json`) for cryptocurrency dashboard functionality.
+- 1ec82d0: Updated dev servers to run on fixed ports: `3000` for preview and `3010` for docs.
+- 0f8dcb0: Updated preview and docs Astro code to use shared `date-format`, `string-format`, `pseudo-random`, and `include-args` helpers instead of duplicated inline Liquid filter ports.
+- 6db32ea: Unified local and CI quality gates: added root-level `lint-prettier`/`format-prettier` scripts covering `core`, `preview`, and `shared`, wired `check` to run lint and type-check together, and updated the lint workflow to run both. Reformatted the covered files with Prettier.
+- ac87b76: Updated preview templates to replace deprecated `font-weight-*` classes with Bootstrap-compatible `fw-*` utility classes.
+- 8f86f1f: Updated Tabler Icons to v3.45.0 and restored the `import-icons` and `import-illustrations` scripts for refreshing icon and illustration data after the Astro migration.
+- 5e119d4: Added `bg-blur` utility and increased `container-tight` width for layout flexibility.
+- 8947d7c: Updated activity messages.
+- 43eee38: Added `Progress Step` component documentation and cleaned up the progress steps preview markup for cleaner rendered output.
+- 1489b13: Added `.prose` alias for markdown content and updated preview/docs references and redirects.
+- bea97f8: Removed `@hotwired/turbo` integration, including `.turbo-progress-bar` styles and the Turbo loader preview demo.
+- 83ec6f8: Added Driver.js library integration and Tour demo page for interactive product tours and onboarding guides.
+- 9c5d729: Updated trending component to use `arrow-up`/`arrow-down` instead of `trending-up`/`trending-down`.
+- bd35fd3: Fixed responsive layouts on the Form Elements page.
+- 41fd82b: Updated `@tabler/icons` to v3.36.1.
+- 8f86f1f: Updated Tabler Illustrations to v1.16.0 with 20 new illustrations, including `teamwork`, `onboarding`, `hacker`, `detective` and seasonal artwork.
+- c707018: Added comprehensive All Elements page with all UI components and Bootstrap elements
+- Updated dependencies [9ea657b]
+- Updated dependencies [5e119d4]
+- Updated dependencies [100a37b]
+- Updated dependencies [059bae1]
+- Updated dependencies [9d5c83f]
+- Updated dependencies [5018aa9]
+- Updated dependencies [9c5d729]
+- Updated dependencies [ec94693]
+- Updated dependencies [c860288]
+- Updated dependencies [9d5c83f]
+- Updated dependencies [2dc7eda]
+- Updated dependencies [70ec683]
+- Updated dependencies [6414238]
+- Updated dependencies [b1d49e9]
+- Updated dependencies [601e950]
+- Updated dependencies [d0a793c]
+- Updated dependencies [b1d49e9]
+- Updated dependencies [c527135]
+- Updated dependencies [9c78cf6]
+- Updated dependencies [bc24b3a]
+- Updated dependencies [c8b8b24]
+- Updated dependencies [f0b909d]
+- Updated dependencies [6e656ad]
+- Updated dependencies [b1d49e9]
+- Updated dependencies [218b0c5]
+- Updated dependencies [8bc6fa7]
+- Updated dependencies [c527135]
+- Updated dependencies [6849337]
+- Updated dependencies [e206d7a]
+- Updated dependencies [4ce08ca]
+- Updated dependencies [6db32ea]
+- Updated dependencies [b8b63d7]
+- Updated dependencies [0106d6b]
+- Updated dependencies [a198b0c]
+- Updated dependencies [9432835]
+- Updated dependencies [9c5d729]
+- Updated dependencies [8d8727f]
+- Updated dependencies [5e119d4]
+- Updated dependencies [3aba62e]
+- Updated dependencies [0c79963]
+- Updated dependencies [301e778]
+- Updated dependencies [48dbd1e]
+- Updated dependencies [4ce08ca]
+- Updated dependencies [9a3361f]
+- Updated dependencies [9c5d729]
+- Updated dependencies [9c5d729]
+- Updated dependencies [9c5d729]
+- Updated dependencies [9c5d729]
+- Updated dependencies [1489b13]
+- Updated dependencies [41ed22a]
+- Updated dependencies [bea97f8]
+- Updated dependencies [9820d11]
+- Updated dependencies [a373e17]
+- Updated dependencies [83ec6f8]
+- Updated dependencies [9c5d729]
+- Updated dependencies [7556ae2]
+- Updated dependencies [736e604]
+- Updated dependencies [f8dee0a]
+- Updated dependencies [9c5d729]
+- Updated dependencies [70ec683]
+- Updated dependencies [666ccd6]
+- Updated dependencies [e3d86c5]
+- Updated dependencies [9d5c83f]
+  - @tabler/core@2.0.0
